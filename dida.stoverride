@@ -1,16 +1,16 @@
-name:滴答清单
-desc:滴答清单解锁
+name: 滴答清单
+desc: 滴答清单解锁
 
 http:
   mitm:
-    -"dida365.com, ticktick.com"
+    - "dida365.com, ticktick.com"
   script:
     - match: ^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status
       name: 滴答清单
       type: response
       require-body: true
-      timeout： 10
-
+      timeout: 10
+      
 script-providers:
   滴答清单:
     url: https://raw.githubusercontent.com/BOOGAY/qx/main/DiDaQingDan.js
