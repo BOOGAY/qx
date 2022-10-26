@@ -1,0 +1,17 @@
+name:滴答清单
+desc:滴答清单解锁
+
+http:
+  mitm:
+    -"dida365.com,ticktick.com"
+  script:
+    - match: ^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status
+      name: dida
+      type: response
+      require-body: true
+      timeout： 10
+
+script-providers:
+  dida:
+    url: https://raw.githubusercontent.com/BOOGAY/qx/main/DiDaQingDan.js
+    interval: 86400
