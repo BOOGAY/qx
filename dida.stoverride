@@ -9,7 +9,7 @@ http:
       name: dida
       type: request
       require-body: true
-      timeout: 10
+      timeout: 100
       
 script-providers:
   dida:
