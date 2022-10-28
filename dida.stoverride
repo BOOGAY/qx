@@ -6,12 +6,12 @@ http:
     - "dida365.com, ticktick.com"
   script:
     - match: ^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status
-      name: 滴答清单
+      name: dida
       type: request
       require-body: true
       timeout: 10
       
 script-providers:
-  滴答清单:
+  dida:
     url: https://raw.githubusercontent.com/BOOGAY/qx/main/DiDaQingDan.js
     interval: 86400
