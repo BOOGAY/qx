@@ -9,7 +9,7 @@ http:
       name: duet
       type: response
       require-body: true
-      timeout: 10
+      timeout: 100
       
 script-providers:
   duet:
